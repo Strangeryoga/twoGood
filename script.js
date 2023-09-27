@@ -66,8 +66,8 @@ function locomotiveAnimation() {
         scrollTrigger: {
           trigger: "#page3",
           scroller: "#main",
-          start: "top -5%",
-          end: "top 5%",
+          start: "top 0",
+          end: "top -5%",
           scrub: true,
         },
       });

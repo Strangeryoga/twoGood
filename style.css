@@ -297,13 +297,33 @@ body{
         padding: 15px;
     }
 
+    #nav #nav-p2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    #links {
+        padding: 10px;
+        display: none;
+    }
+
     #nav-p1{
-      height: 83px;
-        overflow: hidden;
+      height: 67px;
+      overflow: hidden;
        
     }
+
     #nav-p1 svg{
         display: block;
+        height: 67px;
+        width: 80px;
+    }
+
+    #nav #twogoodlogo{
+        height: 40px;
+        margin-left: -20px;
     }
 
     #nav-p2 #links a{
