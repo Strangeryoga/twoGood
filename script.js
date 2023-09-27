@@ -69,7 +69,6 @@ function locomotiveAnimation() {
           start: "top -5%",
           end: "top 5%",
           scrub: true,
-          markers:true
         },
       });
 
