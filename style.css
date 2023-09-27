@@ -15,6 +15,73 @@ html,body{
     width: 100%;
 }
 
+body{
+    background-color: #F7F7F7;
+}
+
+
+#nav{
+    /* height: 100px; */
+    width: 100%;
+    /* background-color: burlywood; */
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+#nav #nav-p2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#links{
+    padding: 10px;
+}
+
+#nav-p1{
+    height: 82px;
+    overflow: hidden;
+}
+#nav-p1 svg{
+    display: block;
+}
+
+#nav-p2 #links a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+   margin: 0 20px;
+}
+
+#icons{
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #F7F7F7;
+}
+
+#nav-p2 #icons i{
+    font-size: 18px;
+    margin: 0 20px;
+    font-weight: 100;
+}
+
+#cursor{
+    height: 250px;
+    width: 250px;
+    background-color: rgba(224, 139, 189, 0.814);
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%,-50%) scale(0);
+    
+}
+
 #page1{
    min-height: 100vh;
    position: relative;
@@ -57,6 +124,8 @@ html,body{
     border-radius: 50%;
     opacity: 0;
     scale: 0;
+    cursor: pointer;
+
 }
 
 #page2{
@@ -73,6 +142,10 @@ html,body{
     height: 100%;
     width: 31%;
     overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #page2 .elem img{
@@ -81,6 +154,122 @@ html,body{
     object-fit: cover;
     scale: 1.1;
 }
+
+#page2 .elem .bar{
+    height: 60px;
+    width: 70%;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 9;
+    background-color: palegoldenrod;
+
+}
+
+#page2 .elem .bar:hover{
+    
+    height:200px;
+    transition: all ease-in 0.2s;
+
+}
+
+#nav1{
+    position: absolute;
+    top: 35.5%;
+    left: 28%;
+    font-family: 'futura';
+}
+
+#nav2{
+    position: absolute;
+    top: 35.5%;
+    left: 55%;
+    font-family: 'futura';
+
+}
+
+#nav3{
+    position: absolute;
+    top: 35.5%;
+    left: 28%;
+    font-family: 'futura';
+    
+}
+
+#nav4{
+    position: absolute;
+    top: 35.5%;
+    left: 55%;
+    font-family: 'futura';
+
+}
+
+#nav5{
+    position: absolute;
+    top: 35%;
+    left: 28%;
+    font-family: 'futura';
+
+}
+
+#nav6{
+    position: absolute;
+    top: 35%;
+    left: 55%;
+    font-family: 'futura';
+    ;
+}
+
+#page3{
+    min-height: 120vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.child{
+    height: 70vh;
+    width: 95vh;
+    /* background-color: red;
+    border: 2px solid #000; */
+    position: relative;
+    padding: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid #000; */
+
+}
+
+.child img{
+    height: 100%;
+
+}
+
+#child1 #title1{
+    position: absolute;
+    top: 90%;
+}
+
+#child2 #title2{
+    position: absolute;
+    top: 90%;
+}
+
+#child3 #title3{
+    position: absolute;
+    top: 90%;
+}
+
+#child4 #title4{
+    position: absolute;
+   top: 90%;
+}
+
+
+
 
 @media (max-width:600px) {
  
@@ -96,6 +285,32 @@ html,body{
         letter-spacing: -3px;
     }
 
+    #nav{
+        /* height: 100px; */
+        width: 100%;
+        /* background-color: burlywood; */
+        position: fixed;
+        z-index: 99;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    #nav-p1{
+      height: 83px;
+        overflow: hidden;
+       
+    }
+    #nav-p1 svg{
+        display: block;
+    }
+
+    #nav-p2 #links a{
+       display: none;
+    }
+    
+
     #video-container{
         height: 25vh;
         margin-top: 3vw;
@@ -103,7 +318,7 @@ html,body{
     
     }
 
-    #video-container #play{
+    #video-container #play {
         padding: 9.5vw 7.2vw;
         font-size: 4.5vw;
         position: absolute;
@@ -111,7 +326,7 @@ html,body{
         left: 50%;
         opacity: 1;
         scale: 1;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
     }
 
     #page2{
@@ -130,6 +345,37 @@ html,body{
         width: 100%;
         overflow: hidden;
         margin-bottom: 3vw;
+    }
+
+    #page2 .elem .bar{
+        height: 40px;
+        border-radius: 50px;
+        width: 70%;
+        border-radius: 50px;
+        position: absolute;
+        z-index: 9;
+        background-color:  rgb(229, 156, 186);
+    
+    }
+
+    #page3{
+        min-height: 120vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .child{
+        height: 54vh;
+        width: 88vw;
+        position: relative;
+        padding: 15vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
    
