@@ -161,7 +161,8 @@ function cursorAnimation(){
     document.querySelector("#child2").addEventListener("mouseenter",function(){
             gsap.to("#cursor",{
                 transform: 'translate(-50%,-50%) scale(1)',
-                backgroundColor: "#dfed48d0"
+                // backgroundColor: "#dfed48d0"
+                backgroundColor: "grey"
             })
     })
 
